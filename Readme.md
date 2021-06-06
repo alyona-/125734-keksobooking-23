@@ -1,7 +1,7 @@
 # Личный проект «Кексобукинг»
 
 * Студент: [Алёна Омелькина](https://up.htmlacademy.ru/javascript/23/user/125734).
-* Наставник: `Неизвестно`.
+* Наставник: [Артем Доба](https://up.htmlacademy.ru/profession/react/7/javascript/user/618431).
 
 ---
 

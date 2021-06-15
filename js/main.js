@@ -3,7 +3,7 @@ const getRandomNum = (min, max) => {
   if (min < 0 || max <= min) {
     return null;
   }
-  return (Math.random() * (max - min + 1) + min);
+  return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
 // eslint-disable-next-line no-unused-vars

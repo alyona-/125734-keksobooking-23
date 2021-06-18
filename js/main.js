@@ -10,6 +10,8 @@ const getDecimalPlaces = (min, max, decimalPlaces) => {
   if (min < 0 || max <= min || decimalPlaces < 0 || decimalPlaces > 20) {
     return null;
   }
-  let num = Math.random() * (max - min + 1) + min;
+  const num = Math.random() * (max - min + 1) + min;
   return num.toFixed(decimalPlaces);
 };
+getRandomNum(1,2);
+getDecimalPlaces(1,2,4);

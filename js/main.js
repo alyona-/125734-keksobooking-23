@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 const getRandomNum = (min, max) => {
   if (min < 0 || max <= min) {
     return null;
@@ -6,14 +5,11 @@ const getRandomNum = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
-// eslint-disable-next-line no-unused-vars
-const getDecimalPlaces = (num, decimalPlaces) => {
-  if (decimalPlaces < 0 || decimalPlaces > 20 || num === null) {
+
+const getDecimalPlaces = (min, max, decimalPlaces) => {
+  if (min < 0 || max <= min || decimalPlaces < 0 || decimalPlaces > 20) {
     return null;
   }
+  let num = Math.random() * (max - min + 1) + min;
   return num.toFixed(decimalPlaces);
 };
-
-
-// eslint-disable-next-line no-console
-console.log(getDecimalPlaces(getRandomNum(6, 12), 3));
